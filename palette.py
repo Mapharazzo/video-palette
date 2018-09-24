@@ -20,7 +20,7 @@ video_group.add_argument('-k', type=int,
                          help='Number of colors per each part')
 video_group.add_argument('-p', type=int,
                          help='Number of parts')
-video_group.add_argument('--verbose', type=str,
+video_group.add_argument('--verbose', action='store_true',
                          help='See the progress verbosely')
 
 # Number of colors per part
@@ -32,12 +32,6 @@ P = 12
 if __name__ == '__main__':
 
     args = parser.parse_args()
-
-    print(args.video)
-    print(args.load)
-    print(args.k)
-    print(args.p)
-    pass
 
     # using a new file
     if args.video:
@@ -53,15 +47,13 @@ if __name__ == '__main__':
             # Get the P value
             P = args.p
 
-        verbose = True if args.verbose else False
-
         cluster = knn_cluster.Cluster(vid, K, P)
-        colors, color_freq = cluster.get_part_colors(verbose=verbose)
+        colors, color_freq = cluster.get_part_colors(verbose=args.verbose)
 
         plotting.plot_colors(colors, color_freq)
 
-        np.save(model_path+"cols", colors)
-        np.save(model_path+"freqs", color_freq)
+        np.save("palettes/"+filename+"cols", colors)
+        np.save("palettes/"+filename+"freqs", color_freq)
 
     if args.load:
         file = args.load
