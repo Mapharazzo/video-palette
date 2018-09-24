@@ -1,6 +1,14 @@
 # video-palette
 Plot and save the most used colors in different parts of a video with Python 3.
 
+## Results
+
+The Grand Budapest Hotel (2014) with default K=8 and P=12
+![The Grand Budapest Hotel (2014)](https://i.imgur.com/boXLFsC.png)
+
+The Matrix (1999) with default K=8 and P=12
+![The Matrix (1999)](https://i.imgur.com/khgrEnl.png)
+
 ### Prerequisites
 
 You will need the following packages:
@@ -21,7 +29,7 @@ numpy
 
 ```P``` = number of parts
 
-```VERBOSE``` = see the progress live (recommended, CLI only)
+```VERBOSE``` = True if present; see the progress live (recommended, CLI only)
 
 **Note: this process should take about 30 minutes for a typical 90 minute movie.
 
