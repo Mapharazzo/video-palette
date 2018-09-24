@@ -1,6 +1,14 @@
 # video-palette
 Plot and save the most used colors in different parts of a video with Python 3.
 
+## Results
+
+The Grand Budapest Hotel (2014) with default K=8 and P=12
+![The Grand Budapest Hotel (2014)](https://i.imgur.com/boXLFsC.png)
+
+The Matrix (1999) with default K=8 and P=12
+![The Matrix (1999)](https://i.imgur.com/khgrEnl.png)
+
 ### Prerequisites
 
 You will need the following packages:
