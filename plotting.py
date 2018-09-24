@@ -79,6 +79,7 @@ def plot_colors(color_pack, color_freqs_pack, plot=True):
         idx += 5
 
     if plot:
+        plt.axis('off')
         plt.show()
     else:
         return x_axis, final_freqs, final_cols
