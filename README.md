@@ -21,7 +21,7 @@ numpy
 
 ```P``` = number of parts
 
-```VERBOSE``` = see the progress live (recommended, CLI only)
+```VERBOSE``` = True if present; see the progress live (recommended, CLI only)
 
 **Note: this process should take about 30 minutes for a typical 90 minute movie.
 
