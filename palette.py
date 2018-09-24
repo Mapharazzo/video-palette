@@ -52,6 +52,11 @@ if __name__ == '__main__':
 
         plotting.plot_colors(colors, color_freq)
 
+        if '\\' in filename:
+            filename = filename.split(sep='\\')[-1]
+        elif '/' in filename:
+            filename = filename.split(sep='/')[-1]
+
         np.save("palettes/"+filename+"cols", colors)
         np.save("palettes/"+filename+"freqs", color_freq)
 
