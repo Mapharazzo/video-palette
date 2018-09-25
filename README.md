@@ -21,7 +21,7 @@ numpy
 ### Usage
 
 #### Plot and save a new palette:
-``` ./palette.py --video VIDEO [-k K] [-p P] [--verbose VERBOSE] ```
+``` ./palette.py --video VIDEO [-k K] [-p P] [--verbose] ```
 
 ```VIDEO``` = path of the video file
 
@@ -29,7 +29,7 @@ numpy
 
 ```P``` = number of parts
 
-```VERBOSE``` = True if present; see the progress live (recommended, CLI only)
+```--verbose``` = True if present; see the progress live (recommended, CLI only)
 
 **Note: this process should take about 30 minutes for a typical 90 minute movie.
 
